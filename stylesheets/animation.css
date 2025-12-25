@@ -299,7 +299,26 @@
     transform: translateX(1.2vw);
   }
 }
+@media (max-width: 768px) {
+  .right-topline {
+    justify-content: center;
+    flex-wrap: wrap;
+    transform: translateX(-31%);
+  }
 
+  .right-topline span:first-child {
+    order: 1;
+  }
+
+  .topline-arrow {
+    order: 2;
+    margin: 0 0.6em;
+  }
+
+  .right-topline span:last-child {
+    order: 3;
+  }
+}
 @keyframes word-swing {
   0% {
     transform: translateX(0);

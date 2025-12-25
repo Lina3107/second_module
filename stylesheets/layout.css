@@ -8,6 +8,7 @@ body {
   justify-content: center;
   width: 100vw;
   cursor: url("images/cursor.svg") 16 16, auto;
+  overflow-x: clip;
 }
 .scene {
   position: relative;
@@ -48,6 +49,7 @@ body {
   margin-top: -2px;
   position: relative;
   z-index: 100;
+  left: 0.055vw;
 }
 
 .dot {
@@ -186,26 +188,27 @@ body {
   background: #d1a045;
 
   margin-left: 0;
-  margin-right: auto;
-  margin-top: 1190px;
+  right: auto;
+  top: 1190px;
 }
 .bg-red {
   width: 32.6vw;
   height: 35.7vw;
   background: #bd2623;
 
-  margin-left: 41.7vw;
-  margin-top: -70.3vw;
+  left: 41.7vw;
+  top: -70.3vw;
 }
 .bg-green {
   width: 37vw;
   height: 22.5vw;
   background: #1a704d;
-  margin-left: 53vw;
-  margin-top: 34.5vw;
+  left: 53vw;
+  top: 34.5vw;
 }
 
 .poster {
+  position: relative;
   width: 100vw;
   display: grid;
   padding: 1vw;
@@ -216,14 +219,18 @@ body {
   grid-row: 1;
   grid-column: 1;
 }
-
+.stage .bg {
+  position: absolute;
+  z-index: 0;
+}
 .stage {
+  position: relative;
+  width: 100%;
   z-index: 0;
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 0;
-  left: 0;
+  height: 180vw;
+  overflow: visible;
 }
 
 .text-stage {
@@ -292,7 +299,9 @@ body {
   flex-direction: column;
   gap: 0.4vw;
 }
-
+.right {
+  padding-right: 1vw;
+}
 .linеe,
 .liine,
 .linne {
@@ -385,7 +394,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 7vw;
-  transform: scale(clamp(0.65, 1.2vw, 1));
+  transform: scale(clamp(0.8, 3vw, 3));
   transform-origin: top center;
   width: 7vw;
   max-width: 120px;
@@ -412,11 +421,12 @@ body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  font-size: clamp(15px, 2.4vw, 40px);
+  font-size: 2.4vw;
   line-height: 1.1;
   color: #1a1a1a;
   white-space: nowrap;
   text-align: center;
+  gap: 20vw;
 }
 .funnel-subtitle {
   bottom: 6.5vw;
@@ -554,15 +564,14 @@ body {
 .map {
   width: 100%;
   padding: 6vw 0;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .map-inner {
-  width: min(90vw, 1200px);
+  width: clamp(320px, 90vw, 1200px);
   margin: 0 auto;
   position: relative;
-  aspect-ratio: 1 / 1;
-  transform: none !important;
+  left: 0.3vw;
 }
 .piece-default {
   filter: grayscale(1) !important;
@@ -860,19 +869,17 @@ body {
 .code,
 .name {
   position: absolute;
-  left: 2vw;
   color: #2b2b2d;
+  top: 63vw;
+  font-size: 2.5vw;
 }
 
 .code {
-  left: -9vw;
-  top: 63vw;
-  font-size: 2.5vw;
+  left: 2vw;
 }
 .name {
-  left: 60vw;
-  top: 63vw;
-  font-size: 2.5vw;
+  right: 0;
+  left: auto;
 }
 .bg,
 .block {
@@ -910,7 +917,30 @@ body {
   margin-left: 0;
   margin-right: auto;
 
-  margin-top: 28vw;
+  margin-top: 128vw;
   animation: float-red-under 6.4s ease-in-out infinite;
   animation-delay: -1.7s;
+}
+.stage .bg-yellow {
+  width: 41.7vw;
+  height: 73vw;
+  background: #d1a045;
+  left: 0;
+  top: 25vw;
+}
+
+.stage .bg-red {
+  width: 32.6vw;
+  height: 35.7vw;
+  background: #bd2623;
+  left: 52vw;
+  top: 2.7vw;
+}
+
+.stage .bg-green {
+  width: 37vw;
+  height: 22.5vw;
+  background: #1a704d;
+  left: 67vw;
+  top: 80vw;
 }
