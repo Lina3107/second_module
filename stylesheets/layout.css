@@ -249,7 +249,7 @@ body {
 
 .line {
   display: flex;
-  gap: 1.2vw;
+  gap: 1vw;
   white-space: normal;
   flex-wrap: wrap;
 }
@@ -523,23 +523,98 @@ body {
   position: relative;
   aspect-ratio: 1 / 1;
 }
+.piece-default {
+  filter: grayscale(1) !important;
+}
+.piece-hover {
+  filter: none !important;
+  animation: none !important;
+}
 .piece-wrap {
   position: absolute;
   width: auto;
   height: auto;
 }
+.piece-wrap:hover .piece-default {
+  opacity: 0;
+}
+.piece-wrap:hover .piece-hover {
+  opacity: 1;
+}
+
 .piece {
   width: 100%;
   height: auto;
   display: block;
   cursor: pointer;
-  filter: grayscale(1);
-  transform: scale(1);
+  filter: none !important;
+  animation: none !important;
+  transform: none;
 }
+.swap {
+  position: absolute;
+}
+.swap .piece {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: auto;
+  transition: opacity 0.25s ease;
+}
+.swap .piece-default {
+  opacity: 1;
+}
+
+.swap .piece-hover {
+  opacity: 0;
+}
+
+.swap:hover .piece-default {
+  opacity: 0;
+}
+
+.swap:hover .piece-hover {
+  opacity: 1;
+}
+
 .num {
   position: absolute;
   font-size: 1.9vw;
   color: #2b2b2d;
+  pointer-events: none;
+}
+.piece-wrap {
+  position: absolute;
+}
+
+.piece-wrap .piece {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: opacity 0.25s ease;
+}
+.piece-wrap .piece-default {
+  opacity: 1;
+}
+
+.piece-wrap .piece-hover {
+  opacity: 0;
+  pointer-events: none;
+}
+.piece-wrap:hover .piece-default {
+  opacity: 0;
+}
+
+.piece-wrap:hover .piece-hover {
+  opacity: 1;
+}
+
+/* номер поверх */
+.piece-wrap .num {
+  position: absolute;
+  z-index: 3;
   pointer-events: none;
 }
 .p1 {
@@ -778,10 +853,39 @@ body {
 .code {
   left: -9vw;
   top: 63vw;
-  font-size: 3vw;
+  font-size: 2.5vw;
 }
 .name {
   left: 60vw;
   top: 63vw;
-  font-size: 3vw;
+  font-size: 2.5vw;
+}
+.bg,
+.block {
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+}
+.block--blue {
+  animation: float-b 5.2s ease-in-out infinite;
+  animation-delay: -1.2s;
+}
+
+.block--yellow {
+  animation: float-a 5.8s ease-in-out infinite;
+  animation-delay: -2s;
+}
+
+.bg-yellow {
+  animation: float-c 7.2s ease-in-out infinite;
+  animation-delay: -3.6s;
+}
+
+.bg-red {
+  animation: float-red 6.2s ease-in-out infinite;
+  animation-delay: -2.4s;
+}
+
+.bg-green {
+  animation: float-e 6.8s ease-in-out infinite;
+  animation-delay: -4s;
 }
