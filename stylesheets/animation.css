@@ -1,0 +1,297 @@
+@keyframes dot1 {
+  0% {
+    transform: translateX(0vw);
+    top: -10%;
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-23vw);
+    top: 100%;
+    opacity: 0;
+  }
+}
+@keyframes dot2 {
+  0% {
+    transform: translateX(0vw);
+    top: -20%;
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(15vw);
+    top: 100%;
+    opacity: 0;
+  }
+}
+@keyframes dot3 {
+  0% {
+    transform: translateX(0vw);
+    top: 20%;
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(5vw);
+    top: 100%;
+    opacity: 0;
+  }
+}
+@keyframes dot4 {
+  0% {
+    transform: translateX(0vw);
+    top: -30%;
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-69vw);
+    top: 100%;
+    opacity: 0;
+  }
+}
+@keyframes dot5 {
+  0% {
+    transform: translateX(-10vw);
+    top: -40%;
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-12vw);
+    top: 100%;
+    opacity: 0;
+  }
+}
+@keyframes dot6 {
+  0% {
+    transform: translateX(0vw);
+    top: 0%;
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-15vw);
+    top: 100%;
+    opacity: 0;
+  }
+}
+@keyframes dot7 {
+  0% {
+    transform: translateX(0vw);
+    top: 10%;
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-30vw);
+    top: 100%;
+    opacity: 0;
+  }
+}
+@keyframes dot8 {
+  0% {
+    transform: translateX(0vw);
+    top: 20%;
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-20vw);
+    top: 100%;
+    opacity: 0;
+  }
+}
+@keyframes dot9 {
+  0% {
+    transform: translateX(0vw);
+    top: 20%;
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-19vw);
+    top: 100%;
+    opacity: 0;
+  }
+}
+@keyframes dot10 {
+  0% {
+    transform: translateX(0vw);
+    top: 20%;
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(90vw);
+    top: 100%;
+    opacity: 0;
+  }
+}
+@keyframes dot11 {
+  0% {
+    transform: translateX(0vw);
+    top: 20%;
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(30vw);
+    top: 100%;
+    opacity: 0;
+  }
+}
+@keyframes dot12 {
+  0% {
+    transform: translateX(0vw);
+    top: -20%;
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(30vw);
+    top: 100%;
+    opacity: 0;
+  }
+}
+@keyframes dot13 {
+  0% {
+    transform: translateX(0vw);
+    top: -20%;
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(48vw);
+    top: 100%;
+    opacity: 0;
+  }
+}
+@keyframes dot14 {
+  0% {
+    transform: translateX(0vw);
+    top: -30%;
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(48vw);
+    top: 100%;
+    opacity: 0;
+  }
+}
+@keyframes dot15 {
+  0% {
+    transform: translateX(-5vw);
+    top: -10%;
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(9vw);
+    top: 100%;
+    opacity: 0;
+  }
+}
+@keyframes dot16 {
+  0% {
+    transform: translateX(0vw);
+    top: -20%;
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(50vw);
+    top: 100%;
+    opacity: 0;
+  }
+}
+@keyframes dot17 {
+  0% {
+    transform: translateX(0vw);
+    top: -20%;
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(50vw);
+    top: 100%;
+    opacity: 0;
+  }
+}
+@keyframes dot18 {
+  0% {
+    transform: translateX(0vw);
+    top: -10%;
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(50vw);
+    top: 100%;
+    opacity: 0;
+  }
+}
+@keyframes dot19 {
+  0% {
+    transform: translateX(0vw);
+    top: -11%;
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(50vw);
+    top: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes word-swing {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-3vw);
+  }
+  100% {
+    transform: translateX(3vw);
+  }
+}

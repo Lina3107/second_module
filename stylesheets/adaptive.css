@@ -1,0 +1,84 @@
+@media (max-width: 1200px) {
+  .text-wrap {
+    font-size: 1.7vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .text-wrap {
+    font-size: 1.5vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .text-wrap {
+    font-size: 1.3vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .funnel {
+    width: 90vw;
+  }
+}
+
+.funnel-title {
+  top: 4vw;
+}
+.ffunnel-subtitle {
+  bottom: 4vw;
+}
+
+@media (max-width: 900px) {
+  .funnel-arrows {
+    transform: scale(0.85);
+  }
+}
+
+@media (max-width: 600px) {
+  .funnel-arrows {
+    transform: scale(0.65);
+  }
+}
+@media (max-width: 768px) {
+  .scheme-inner {
+    grid-template-columns: 1fr;
+    gap: 6vw;
+  }
+}
+@media (max-width: 768px) {
+  .scheme-inner {
+    grid-template-columns: 1fr;
+    gap: 6vw;
+  }
+
+  .scheme-right {
+    min-height: 56vw;
+  }
+
+  .hole-title {
+    left: 0;
+    bottom: -2%;
+  }
+}
+@media (max-width: 768px) {
+  .map-inner {
+    width: 100vw;
+    max-width: none;
+    transform: translate(9vw, 11vw);
+  }
+}
+
+@media (max-width: 768px) {
+  .map-inner {
+    width: 100vw;
+    max-width: none;
+    transform: translate(10vw, 12vw);
+  }
+}
+@media (max-width: 600px) {
+  .code,
+  .name {
+    font-size: 2vw;
+  }
+}
