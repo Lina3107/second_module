@@ -21,7 +21,40 @@
     width: 90vw;
   }
 }
+@media (max-width: 1200px) {
+  .funnel-title {
+    font-size: 2vw;
+  }
+}
 
+@media (max-width: 900px) {
+  .funnel-title {
+    font-size: 1.8vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .funnel-title {
+    font-size: 1.6vw;
+  }
+}
+@media (max-width: 1200px) {
+  .funnel-subtitle {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .funnel-subtitle {
+    font-size: 1.8vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .funnel-subtitle {
+    font-size: 1.6vw;
+  }
+}
 .funnel-title {
   top: 4vw;
 }
