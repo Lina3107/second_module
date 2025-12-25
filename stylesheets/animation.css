@@ -9,7 +9,7 @@
   }
   100% {
     transform: translateX(-23vw);
-    top: 100%;
+    top: 240%;
     opacity: 0;
   }
 }
@@ -24,7 +24,7 @@
   }
   100% {
     transform: translateX(15vw);
-    top: 100%;
+    top: 300%;
     opacity: 0;
   }
 }
@@ -39,7 +39,7 @@
   }
   100% {
     transform: translateX(5vw);
-    top: 100%;
+    top: 250%;
     opacity: 0;
   }
 }
@@ -54,7 +54,7 @@
   }
   100% {
     transform: translateX(-69vw);
-    top: 100%;
+    top: 170%;
     opacity: 0;
   }
 }
@@ -69,7 +69,7 @@
   }
   100% {
     transform: translateX(-12vw);
-    top: 100%;
+    top: 150%;
     opacity: 0;
   }
 }
@@ -84,7 +84,7 @@
   }
   100% {
     transform: translateX(-15vw);
-    top: 100%;
+    top: 280%;
     opacity: 0;
   }
 }
@@ -99,7 +99,7 @@
   }
   100% {
     transform: translateX(-30vw);
-    top: 100%;
+    top: 270%;
     opacity: 0;
   }
 }
@@ -114,7 +114,7 @@
   }
   100% {
     transform: translateX(-20vw);
-    top: 100%;
+    top: 150%;
     opacity: 0;
   }
 }
@@ -129,7 +129,7 @@
   }
   100% {
     transform: translateX(-19vw);
-    top: 100%;
+    top: 150%;
     opacity: 0;
   }
 }
@@ -144,7 +144,7 @@
   }
   100% {
     transform: translateX(90vw);
-    top: 100%;
+    top: 170%;
     opacity: 0;
   }
 }
@@ -159,7 +159,7 @@
   }
   100% {
     transform: translateX(30vw);
-    top: 100%;
+    top: 160%;
     opacity: 0;
   }
 }
@@ -174,7 +174,7 @@
   }
   100% {
     transform: translateX(30vw);
-    top: 100%;
+    top: 130%;
     opacity: 0;
   }
 }
@@ -189,7 +189,7 @@
   }
   100% {
     transform: translateX(48vw);
-    top: 100%;
+    top: 120%;
     opacity: 0;
   }
 }
@@ -204,7 +204,7 @@
   }
   100% {
     transform: translateX(48vw);
-    top: 100%;
+    top: 110%;
     opacity: 0;
   }
 }
@@ -219,7 +219,7 @@
   }
   100% {
     transform: translateX(9vw);
-    top: 100%;
+    top: 150%;
     opacity: 0;
   }
 }
@@ -234,7 +234,7 @@
   }
   100% {
     transform: translateX(50vw);
-    top: 100%;
+    top: 145%;
     opacity: 0;
   }
 }
@@ -249,7 +249,7 @@
   }
   100% {
     transform: translateX(50vw);
-    top: 100%;
+    top: 161%;
     opacity: 0;
   }
 }
@@ -279,8 +279,24 @@
   }
   100% {
     transform: translateX(50vw);
-    top: 100%;
+    top: 120%;
     opacity: 0;
+  }
+}
+@keyframes arrow-nudge {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    transform: translate(calc(-50% - 0.7vw), calc(-50% + 0.7vw));
+  }
+}
+@keyframes arrow-slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(1.2vw);
   }
 }
 
@@ -363,7 +379,23 @@
     transform: translate3d(0, 0, 0);
   }
 }
-
+@keyframes float-red-under {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  25% {
+    transform: translate3d(4.5vw, 7vw, 0);
+  }
+  55% {
+    transform: translate3d(1.5vw, -5vw, 0);
+  }
+  85% {
+    transform: translate3d(-3.5vw, 3vw, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
 @keyframes float-e {
   0% {
     transform: translate3d(0, 0, 0);
@@ -379,5 +411,31 @@
   }
   100% {
     transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes spiral-spin {
+  from {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  to {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+@keyframes arrow-drop {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(1.6vw);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(1.6vw);
+    opacity: 0.85;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }

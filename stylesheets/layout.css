@@ -394,6 +394,18 @@ body {
 .arrow {
   height: auto;
   display: block;
+  animation: arrow-drop 1.4s ease-in-out infinite;
+  will-change: transform;
+}
+
+.arrow.a1 {
+  animation-delay: 0s;
+}
+.arrow.a2 {
+  animation-delay: 0.25s;
+}
+.arrow.a3 {
+  animation-delay: 0.5s;
 }
 .funnel-title,
 .funnel-subtitle {
@@ -426,6 +438,17 @@ body {
   align-items: center;
   justify-content: center;
 }
+.here-arrow {
+  position: absolute;
+  width: 16%;
+  left: 61%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  pointer-events: none;
+  animation: arrow-nudge 0.65s ease-in-out infinite alternate;
+  will-change: transform;
+}
 
 .left-img {
   width: 100%;
@@ -445,28 +468,45 @@ body {
 .starburst {
   position: absolute;
   left: 52%;
-  top: 64%;
+  top: 60%;
   transform: translateX(-50%);
-  width: 96%;
+  width: 70%;
   height: auto;
   z-index: 1;
+  transform-origin: 50% 50%;
+  animation: spiral-spin 0.25s linear infinite;
+  will-change: transform;
 }
 .right-topline {
   position: absolute;
-  top: 13%;
+  top: 12%;
   left: 50.5%;
   transform: translateX(-50%);
-  width: 96%;
+  width: min(96%, 56vw);
+
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
+  gap: 1.2vw;
+
   font-size: clamp(12px, 2.4vw, 30px);
   color: #2b2b2d;
   z-index: 5;
+
+  white-space: nowrap;
 }
 
+.right-topline span {
+  line-height: 1;
+}
 .topline-arrow {
-  margin: 0 1vw;
+  width: clamp(28px, 6vw, 90px);
+  height: auto;
+  flex: 0 0 auto;
+  margin: 0;
+  display: inline-block;
+  animation: arrow-slide 0.7s ease-in-out infinite alternate;
+  will-change: transform;
 }
 .ladder {
   position: absolute;
@@ -522,6 +562,7 @@ body {
   margin: 0 auto;
   position: relative;
   aspect-ratio: 1 / 1;
+  transform: none !important;
 }
 .piece-default {
   filter: grayscale(1) !important;
@@ -550,31 +591,6 @@ body {
   filter: none !important;
   animation: none !important;
   transform: none;
-}
-.swap {
-  position: absolute;
-}
-.swap .piece {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: auto;
-  transition: opacity 0.25s ease;
-}
-.swap .piece-default {
-  opacity: 1;
-}
-
-.swap .piece-hover {
-  opacity: 0;
-}
-
-.swap:hover .piece-default {
-  opacity: 0;
-}
-
-.swap:hover .piece-hover {
-  opacity: 1;
 }
 
 .num {
@@ -610,8 +626,6 @@ body {
 .piece-wrap:hover .piece-hover {
   opacity: 1;
 }
-
-/* номер поверх */
 .piece-wrap .num {
   position: absolute;
   z-index: 3;
@@ -888,4 +902,15 @@ body {
 .bg-green {
   animation: float-e 6.8s ease-in-out infinite;
   animation-delay: -4s;
+}
+.bg-red-under {
+  width: 41.7vw;
+  height: 28vw;
+  background: #bd2623;
+  margin-left: 0;
+  margin-right: auto;
+
+  margin-top: 28vw;
+  animation: float-red-under 6.4s ease-in-out infinite;
+  animation-delay: -1.7s;
 }
