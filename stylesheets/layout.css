@@ -568,7 +568,7 @@ body {
 }
 
 .map-inner {
-  width: clamp(320px, 90vw, 1200px);
+  width: 75%;
   margin: 0 auto;
   position: relative;
   left: 0.3vw;
