@@ -302,13 +302,13 @@ body {
 .right {
   padding-right: 1vw;
 }
-.linеe,
+.linРµe,
 .liine,
 .linne {
   display: flex;
 }
 
-.linеe {
+.linРµe {
   margin-left: 3vw;
 }
 .liine {
@@ -568,7 +568,7 @@ body {
 }
 
 .map-inner {
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
   position: relative;
   left: 0.3vw;
