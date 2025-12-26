@@ -490,7 +490,7 @@ body {
 .right-topline {
   position: absolute;
   top: 12%;
-  left: 44%;
+  left: 50.5%;
   transform: translateX(-50%);
   width: min(96%, 56vw);
 
@@ -568,10 +568,10 @@ body {
 }
 
 .map-inner {
-  width: 80%;
+  width: min(90vw, 1200px);
   margin: 0 auto;
   position: relative;
-  left: 0.3vw;
+  aspect-ratio: 1 / 1;
 }
 .piece-default {
   filter: grayscale(1) !important;

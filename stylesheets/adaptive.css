@@ -101,7 +101,7 @@
   }
 
   .map-inner {
-    width: 85%;
+    width: 80%;
     transform-origin: top center;
   }
 }
@@ -111,7 +111,7 @@
   }
 
   .map-inner {
-    width: 85%;
+    width: 80%;
   }
 }
 @media (max-width: 475px) {
@@ -120,7 +120,7 @@
   }
 
   .map-inner {
-    width: 85%;
+    width: 80%;
   }
   .num {
     font-size: 2.4vw;
