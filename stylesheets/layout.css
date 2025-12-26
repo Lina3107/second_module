@@ -568,10 +568,10 @@ body {
 }
 
 .map-inner {
-  width: min(90vw, 1200px);
+  width: clamp(320px, 90vw, 1200px);
   margin: 0 auto;
   position: relative;
-  aspect-ratio: 1 / 1;
+  left: 0.3vw;
 }
 .piece-default {
   filter: grayscale(1) !important;
