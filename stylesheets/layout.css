@@ -490,7 +490,7 @@ body {
 .right-topline {
   position: absolute;
   top: 12%;
-  left: 50.5%;
+  left: 44%;
   transform: translateX(-50%);
   width: min(96%, 56vw);
 
